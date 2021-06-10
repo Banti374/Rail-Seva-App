@@ -8,8 +8,9 @@
     tools:context=".dashbrd">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="412dp"
+        android:layout_height="733dp"
+        tools:layout_editor_absoluteY="-2dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -29,12 +30,13 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.constraintlayout.helper.widget.Flow
+                android:id="@+id/flow"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_8ssp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="@dimen/_8ssp"
-                app:constraint_referenced_ids="cardtrain, cardticket, cardequiry, cardstation, cardcollie, cardwheel, cardcomplain , cardcontact"
+                app:constraint_referenced_ids="cardtrain, cardticket, cardequiry, cardstation, cardcollie, cardwheel, cardcomplaint , cardaboutus"
                 app:flow_horizontalGap="@dimen/_3ssp"
                 app:flow_maxElementsWrap="2"
                 app:flow_verticalGap="@dimen/_3ssp"
@@ -63,14 +65,14 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="44dp"
                         android:layout_height="42dp"
-                        android:src="@drawable/train"
-                        />
+                        android:src="@drawable/train" />
 
                     <TextView
-                        android:layout_width="44dp"
+                        android:id="@+id/schedulec"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_4ssp"
-                        android:text="Train"
+                        android:text="Station location"
                         android:textColor="@color/primary_text"
                         android:textSize="@dimen/_14ssp"
                         android:textStyle="bold" />
@@ -101,14 +103,14 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="44dp"
                         android:layout_height="42dp"
-                        android:src="@drawable/ticket"
-                         />
+                        android:src="@drawable/ticket" />
 
                     <TextView
+                        android:id="@+id/booking"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_4ssp"
-                        android:text="My Bookings"
+                        android:text="Ticket Booking"
                         android:textColor="@color/primary_text"
                         android:textSize="@dimen/_14ssp"
                         android:textStyle="bold" />
@@ -140,10 +142,10 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="44dp"
                         android:layout_height="42dp"
-                        android:src="@drawable/enqu"
-                         />
+                        android:src="@drawable/enqu" />
 
                     <TextView
+                        android:id="@+id/pnrc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_4ssp"
@@ -178,18 +180,17 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="44dp"
                         android:layout_height="42dp"
-                        android:src="@drawable/station"
-                         />
+                        android:src="@drawable/station" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/stationc"
+                        android:layout_width="124dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_4ssp"
-                        android:text="Stations"
+                        android:text="Stations Map"
                         android:textColor="@color/primary_text"
                         android:textSize="@dimen/_14ssp"
                         android:textStyle="bold" />
-
 
 
                 </LinearLayout>
@@ -217,18 +218,17 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="44dp"
                         android:layout_height="42dp"
-                        android:src="@drawable/bag"
-                        />
+                        android:src="@drawable/bag" />
 
                     <TextView
+                        android:id="@+id/cooliec"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_4ssp"
-                        android:text="Coolie"
+                        android:text="Coolie Service"
                         android:textColor="@color/primary_text"
                         android:textSize="@dimen/_14ssp"
                         android:textStyle="bold" />
-
 
 
                 </LinearLayout>
@@ -256,10 +256,10 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="44dp"
                         android:layout_height="42dp"
-                        android:src="@drawable/wheelchair"
-                        />
+                        android:src="@drawable/wheelchair" />
 
                     <TextView
+                        android:id="@+id/wheelchairc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_4ssp"
@@ -269,14 +269,13 @@
                         android:textStyle="bold" />
 
 
-
                 </LinearLayout>
 
 
             </soup.neumorphism.NeumorphCardView>
 
             <soup.neumorphism.NeumorphCardView
-                android:id="@+id/cardcomplain"
+                android:id="@+id/cardcomplaint"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:neumorph_backgroundColor="@color/dark_shadow"
@@ -295,18 +294,17 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="44dp"
                         android:layout_height="42dp"
-                        android:src="@drawable/complain"
-                        />
+                        android:src="@drawable/complain" />
 
                     <TextView
+                        android:id="@+id/compaintc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_4ssp"
-                        android:text="Complain Box"
+                        android:text="Complaint Box"
                         android:textColor="@color/primary_text"
                         android:textSize="@dimen/_14ssp"
                         android:textStyle="bold" />
-
 
 
                 </LinearLayout>
@@ -315,7 +313,7 @@
             </soup.neumorphism.NeumorphCardView>
 
             <soup.neumorphism.NeumorphCardView
-                android:id="@+id/cardcontact"
+                android:id="@+id/cardaboutus"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:neumorph_backgroundColor="@color/dark_shadow"
@@ -334,24 +332,37 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="44dp"
                         android:layout_height="42dp"
-                        android:src="@drawable/contact"
-                        />
+                        android:src="@drawable/contact" />
 
                     <TextView
+                        android:id="@+id/aboutusc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_4ssp"
-                        android:text="Contact us"
+                        android:text="About us"
                         android:textColor="@color/primary_text"
                         android:textSize="@dimen/_14ssp"
                         android:textStyle="bold" />
-
 
 
                 </LinearLayout>
 
 
             </soup.neumorphism.NeumorphCardView>
+
+            <ImageView
+                android:id="@+id/imageprofile"
+                android:layout_width="45dp"
+                android:layout_height="38dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.949"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.033"
+                app:srcCompat="@drawable/user" />
+
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

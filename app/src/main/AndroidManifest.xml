@@ -9,7 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TOAST">
-        <activity android:name=".dashbrd"></activity>
+        <activity android:name=".Ticketview"></activity>
+        <activity android:name=".pnrfinal" />
+        <activity android:name=".location" />
+        <activity android:name=".ticket" />
+        <activity android:name=".forgetpass" />
+        <activity android:name=".profile" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".singup" />
+        <activity android:name=".wheelchair" />
+        <activity android:name=".coolie" />
+        <activity android:name=".around" />
+        <activity android:name=".edittext_around" />
+        <activity android:name=".rounded_border_edittext" />
+        <activity android:name=".aboutus" />
+        <activity android:name=".complaint" />
+        <activity android:name=".pnr" />
+        <activity android:name=".stations" />
+        <activity android:name=".bookingpage" />
+        <activity android:name=".booking" />
+        <activity android:name=".dashbrd" />
         <activity
             android:name=".SECOND"
             android:theme="@style/FullScreen" />

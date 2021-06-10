@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="223dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardMaxElevation="8dp"
+    app:cardCornerRadius="22dp"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/dark_shadow"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:text="Train Name: "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/trainnameblnk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:text="____________________-"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:text="Stations: "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/stationblnk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="-"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:text="Time : "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/timeblnk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="-"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/time2blnk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="|"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:text="Day : "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/dayblnk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="-"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Train No: "
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/trainnoblnk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textColor="@color/primary_text"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Price : "
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/trainpriceblnk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textColor="@color/primary_text"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

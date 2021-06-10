@@ -25,9 +25,19 @@
         <item name="neumorph_cornerFamily">rounded</item>
         <item name="neumorph_cornerSize">@dimen/_4ssp</item>
     </style>
+
     <style name="NeumorphismCard">
         <item name="neumorph_cornerFamily">rounded</item>
         <item name="neumorph_cornerSize">@dimen/_10ssp</item>
     </style>
+
+    <style name="Theme.TOAST.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TOAST.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TOAST.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
